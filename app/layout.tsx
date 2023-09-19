@@ -3,6 +3,22 @@ import '../styles/globals.css'
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { ThemeProvider } from 'next-themes'
+//import {Outlet} from "react-router-dom";
+
+// import React from 'react'
+// import ReactDOM from 'react-dom/client'
+// import Home from '@/app/page'
+// import { BrowserRouter } from 'react-router-dom'
+// import Router from '@/app/router'
+
+// ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <Home />
+//     </BrowserRouter>
+//   </React.StrictMode>,
+// )
+
 
 export default function RootLayout({
   children,
@@ -19,7 +35,9 @@ export default function RootLayout({
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
-          {children}
+            <div className='mt-24'>
+              {children}
+            </div>
           <Footer />
         </ThemeProvider>
       </body>

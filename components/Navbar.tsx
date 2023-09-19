@@ -1,10 +1,12 @@
 'use client'
 import { createContext } from 'react'
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-scroll/modules"
+import { Link as ScrollLink } from "react-scroll/modules"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 interface NavItem {
     label: string
@@ -19,52 +21,42 @@ interface NavItem {
 // replace icon in head.tsx with an actual icon
 
 const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: "Home",
-        page: "home",
-    },
+    // {
+    //     label: "Home",
+    //     page: "/",
+    // },
     {   label: "About",
-        page: "about"
+        page: "/"
     },
     {   label: "Projects",
-        page: "projects"
-    }
+        page: "/projects"
+    },
+
+    
 ]
 
 const Navbar = () => {
-    // initialize constant
-   //const { systemTheme, theme, setTheme } = useTheme()
-   // const currentTheme = theme === "system" ? systemTheme : theme   // use systemTheme if equals system or theme it was assigned if not
     const [navbar, setNavbar] = useState(false)
+    const router = useRouter()
 
-    // const [mounted, setMounted] = useState(false)
-    // const { theme, setTheme } = useTheme()
-
-    // useEffect(() => {
-    //     setMounted(true)
-    // }, [])
-
-    // if (!mounted) {
-    //     setTheme("system") 
-    // }
-      
-    
-    //const themeIcon = 
-
-    // outer div - shifts navbar elements to right
-    // shadow after white for line
-    // ${theme ==='dark' ? 'bg-stone-900 border-b border-stone-600' : 'bg-white'}
-    // ${theme ==='dark' ? 'text-neutral-100' : 'text-neutral-900 hover:text-neutral-500'}
     return (
         <header className={`w-full mx-auto px-10 shadow fixed top-0 z-50 bg-white`}>
             <div className = "justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3">
-                        <Link to="home" className="hover:text-neutral-500">
+                        {/* <button type="button" onClick={() => router.push('/post/abc')}>
+                            Click me
+                        </button> */}
+                        <Link href="/" className="hover:text-neutral-500">
                             <div className="md:py-5 md:block">
                                 <h2 className="text-2xl font-bold"> Claire Lu</h2>
                             </div>
                         </Link>
+                        {/* <ScrollLink to="home" className="hover:text-neutral-500">
+                            <div className="md:py-5 md:block">
+                                <h2 className="text-2xl font-bold"> Claire Lu</h2>
+                            </div>
+                        </ScrollLink> */}
                         <div className="md:hidden">
                             <button onClick={()=>setNavbar(!navbar)}>
                                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -84,34 +76,19 @@ const Navbar = () => {
                                 return (
                                     <Link
                                         key={idx}
-                                        to={item.page}
+                                        href={item.page}
                                         className={
                                             `block lg:inline-block hover:text-neutral-500 text-neutral-900`
                                         }
-                                        activeClass="active"
-                                        spy={true}
-                                        offset={100}
-                                        duration={500}
+                                       // activeClass="active"
+                                        //spy={true}
+                                        //offset={-100}
+                                        //duration={500}
                                         onClick={() => setNavbar(!navbar)}
                                         >{item.label}
                                     </Link>
                                 )
                             })}
-                            {/* {currentTheme === "dark" ? (
-                                <button
-                                    onClick={() => setTheme("light")}
-                                    className="bg-slate-100 p-2 rounded-xl"
-                                >
-                                    <RiSunLine size={25} color="black"/>
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={() => setTheme("dark")}
-                                    className="bg-slate-200 p-2 rounded-xl"
-                                >
-                                    <RiMoonFill size={25} color="black"/>
-                                </button>
-                            )} */}
                         </div>
                     </div>
                 </div>
