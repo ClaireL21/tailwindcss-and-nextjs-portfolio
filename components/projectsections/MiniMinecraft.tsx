@@ -13,7 +13,7 @@ const MiniMinecraftSection = () => {
 
             <div className="mt-8">
                 <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/mc.mov" />
+                    <source src="/mini minecraft.mp4" />
                 </video>
             </div>
 
