@@ -31,7 +31,12 @@ const NAV_ITEMS: Array<NavItem> = [
     {   label: "Projects",
         page: "/projects"
     },
-
+    {   label: "Portfolio",
+        page: "/portfolio"
+    },
+    {   label: "For Fun",
+        page: "/forfun"
+    },
     
 ]
 
@@ -40,14 +45,14 @@ const Navbar = () => {
     const router = useRouter()
 
     return (
-        <header className={`w-full mx-auto px-10 shadow fixed top-0 z-50 bg-white`}>
+        <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-white`}>
             <div className = "justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3">
                         {/* <button type="button" onClick={() => router.push('/post/abc')}>
                             Click me
                         </button> */}
-                        <Link href="/" className="hover:text-neutral-500">
+                        <Link href="/" className="hover:text-yellow-600">
                             <div className="md:py-5 md:block">
                                 <h2 className="text-2xl font-bold"> Claire Lu</h2>
                             </div>
@@ -71,15 +76,16 @@ const Navbar = () => {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <div className="items-center justify-center space-y-8 md:flex md:space-x-10 md:space-y-0">
                             {NAV_ITEMS.map((item, idx) => {
                                 return (
                                     <Link
                                         key={idx}
-                                        href={item.page}
+                                        href={item.page }
                                         className={
-                                            `block lg:inline-block hover:text-neutral-500 text-neutral-900`
+                                            `block lg:inline-block font-semibold hover:text-yellow-600 text-neutral-900`
                                         }
+                                        
                                        // activeClass="active"
                                         //spy={true}
                                         //offset={-100}
@@ -87,6 +93,8 @@ const Navbar = () => {
                                         onClick={() => setNavbar(!navbar)}
                                         >{item.label}
                                     </Link>
+                                    
+                                    
                                 )
                             })}
                         </div>
