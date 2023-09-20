@@ -7,7 +7,7 @@ const ForFunSection = () => {
     return (
         <section id="forfun">
             <div className="">
-                For Fun
+                For Fun - This is for fun
             </div>
         </section>
     )
