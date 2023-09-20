@@ -57,8 +57,11 @@ const AboutSection = () => {
                         <p>
                             I'm also interested in software engineering. Over the summer, I worked as an 
                             iOS Software Engineer at Queenly, a marketplace for formalwear dresses. 
-                            I built A/B features and for my final project, I worked on producing 3D dress renders 
-                            for their app and experimented with loading in dresses in AR scenes.
+                            I built A/B features and implemented redesigns. For my final project, I produced 3D dress renders 
+                            using photogrammetry, integrated them throughout the app, and experimented with loading in dresses in AR scenes. 
+
+                            {/* I managed the end-to-end project scope for my final project, full iOS end-user experience
+                            Learned how to load models against a user’s body as a basis for an augmented reality try-on feature */}
                         </p>
                         <br />
                         <p>

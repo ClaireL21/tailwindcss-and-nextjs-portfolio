@@ -19,49 +19,20 @@ import SlideUp from './SlideUp'
 // mini maya
 // shader projects
 // fireball
-const projects = [
-    {
-        name: "High Resolution 3D Models of Formal Dresses",
-        description: 
-            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
-    },
-    {
-        name: "Follow/Following Project",
-        description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
-    },
-    {
-        name: "Fun Food Finder",
-        description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
-    },
-    {
-        name: "Pinboard iOS Mobile App",
-        description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
-    },
-]
 
 const graphicsProjects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",
         description: 
             "Mini Minecraft: Pandora's Blocks is a final project for CIS 4600/5600",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        image: "/minecraftThumb.png",
+        github: "",
+        link: "/projects/miniMinecraft",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
     },
     {
         name: "Procedural Flame",
@@ -69,15 +40,25 @@ const graphicsProjects = [
             "Project 1 is an awesome project. you should be jealous of my awesome project",
         image: "/headshot.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/miniMinecraft",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
     },
     {
-        name: "Mini Maya",
+        name: "Micro Maya",
         description: 
             "Project 1 is an awesome project. you should be jealous of my awesome project",
         image: "/headshot.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/microMaya",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
     },
     {
         name: "Shader Fun",
@@ -86,6 +67,82 @@ const graphicsProjects = [
         image: "/headshot.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "https://53claire.wixsite.com/claire-lu",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
+    },
+]
+
+const projects = [
+    {
+        name: "High Resolution 3D Models of Formal Dresses",
+        description: 
+            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry" +
+            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry"+
+            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry"+
+            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry",
+        image: "/highres.png",
+        github: "",
+        link: "",
+        tags: [
+            { skill: "Swift"},
+            { skill: "Objective-C"},
+            { skill: "Xcode"},
+        ]
+    },
+    {
+        name: "Follow/Following Project",
+        description: 
+            "Project 1 is an awesome project. you should be jealous of my awesome project",
+        image: "/headshot.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "https://53claire.wixsite.com/claire-lu",
+        tags: [
+            { skill: "Swift"},
+            { skill: "Objective-C"},
+            { skill: "Xcode"},
+        ]
+    },
+    {
+        name: "Fun Food Finder",
+        description: 
+            "Project 1 is an awesome project. you should be jealous of my awesome project",
+        image: "/headshot.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "https://53claire.wixsite.com/claire-lu",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
+    },
+    {
+        name: "Pinboard iOS Mobile App",
+        description: 
+            "Project 1 is an awesome project. you should be jealous of my awesome project",
+        image: "/headshot.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "https://53claire.wixsite.com/claire-lu",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
+    },
+    {
+        name: "Flicker Game",
+        description: 
+            "Project 1 is an awesome project. you should be jealous of my awesome project",
+        image: "/headshot.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "https://53claire.wixsite.com/claire-lu",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
     },
 ]
 
@@ -101,29 +158,43 @@ const ProjectsSection = () => {
             </h1>
             <div className="min-h-screen flex items-center justify-center"> 
                 <div className="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8">
-                    {projects.map((project, idx) => {
+                    {graphicsProjects.map((project, idx) => {
                         return (
                             <div key={idx}>
                             <SlideUp offset="-100px 0px -100px 0px">
                                 <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-4">
-                                    <div className="mt-8 ">
+                                    <div className="mt-8">
                                         <Link href={project.link} target="_blank">
                                             <Image 
-                                                className="rounded-xl hover:opacity-70"
+                                                className="rounded-xl hover:opacity-70 h-1000 w-500"
                                                 src={project.image}
                                                 alt="" 
                                                 width={1000} 
-                                                height={1000}>
+                                                height={100}>
                                             </Image>
                                         </Link>
                                     </div>
                                     <div className="mt-8">
-                                        <h1 className="text-xl font-bold mb-2">{project.name}</h1>
+                                        <h1 className="text-xl underline hover:text-yellow-600 font-bold mb-2">
+                                            <Link href={project.link} target="_blank">
+                                                {project.name}
+                                            </Link>
+                                        </h1>
+
                                         <p className="leading-7 mb-4 text-neutral-900"> 
                                             {project.description}
                                         </p>
                                         <div className="flex flex-row align-bottom space-x-4">
-                                            <Link href={project.github} target="_blank">
+                                            {project.tags.map((item, idx) => {
+                                                return (
+                                                    <p key={idx}
+                                                        className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                                        >
+                                                        {item.skill}
+                                                    </p>
+                                                )
+                                            })}
+                                            {/* <Link href={project.github} target="_blank">
                                                 <BsGithub
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
@@ -134,7 +205,7 @@ const ProjectsSection = () => {
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </div>
@@ -145,6 +216,7 @@ const ProjectsSection = () => {
                 </div>
             </div>
 
+            <br/>
             <h1 className="mt-10 text-left font-bold text-2xl">
                 Tech Projects
             </h1>
@@ -166,8 +238,11 @@ const ProjectsSection = () => {
                                             </Image>
                                         </Link>
                                     </div>
-                                    <div className="mt-8">
-                                        <h1 className="text-xl font-bold mb-2">{project.name}</h1>
+                                    <div className="mt-8 ">
+                                        <h1 className="text-xl font-bold mb-2 underline hover:text-yellow-600">
+                                            <Link href={project.link} target="_blank">
+                                                {project.name}
+                                            </Link></h1>
                                         <p className="leading-7 mb-4 text-neutral-900"> 
                                             {project.description}
                                         </p>

@@ -81,7 +81,7 @@ const Navbar = () => {
                                 return (
                                     <Link
                                         key={idx}
-                                        href={item.page }
+                                        href={item.page}
                                         className={
                                             `block lg:inline-block font-semibold hover:text-yellow-600 text-neutral-900`
                                         }

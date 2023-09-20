@@ -35,7 +35,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
-            <div className='mt-24'>
+            <div className='mt-36'>
               {children}
             </div>
           <Footer />
