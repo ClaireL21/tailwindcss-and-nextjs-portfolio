@@ -168,8 +168,8 @@ const MicroMayaSection = () => {
                         className="rounded-xl"
                         src="/MicroMayaDemos/gui screen.png"
                         alt="" 
-                        width={500} 
-                        height={500}>
+                        width={600} 
+                        height={600}>
                     </Image>
                 </div>
 

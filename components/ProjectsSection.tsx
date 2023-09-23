@@ -24,22 +24,9 @@ const graphicsProjects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",
         description: 
-            "Mini Minecraft: Pandora's Blocks is a final project for CIS 4600/5600",
-        image: "/minecraftThumb.png",
+            "Mini Minecraft: Pandora's Blocks is a final project for CIS 4600/5600.", 
+        image: "/Minecraft/minecraftThumb2.png",
         github: "",
-        link: "/projects/miniMinecraft",
-        tags: [
-            { skill: "C++"},
-            { skill: "GLSL"},
-            { skill: "Qt"},
-        ]
-    },
-    {
-        name: "Procedural Flame",
-        description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/miniMinecraft",
         tags: [
             { skill: "C++"},
@@ -50,10 +37,26 @@ const graphicsProjects = [
     {
         name: "Micro Maya",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+            "A mini version of the 3D modeling software Maya. " + 
+            "I represented models using a half edge data structure and implemented basic 3D mesh operations, including" + 
+            " deforming meshes, splitting edges, triangulation, and smoothing using Catmull-Clark subdivision." + 
+            " Micro Maya also supports skinning so that a skeleton can be attached to a mesh and modified by the user via joint transformations and rotations.",
+        image: "/MicroMayaDemos/Cow Thumb.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/microMaya",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
+    },
+    {
+        name: "Procedural Flame",
+        description: 
+            "Project 1 is an awesome project. you should be jealous of my awesome project",
+        image: "/MicroMayaDemos/gui screen.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "/projects/miniMinecraft",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},
@@ -163,10 +166,10 @@ const ProjectsSection = () => {
                             <div key={idx}>
                             <SlideUp offset="-100px 0px -100px 0px">
                                 <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-4">
-                                    <div className="mt-8">
+                                    <div className="mt-10">
                                         <Link href={project.link} target="_blank">
                                             <Image 
-                                                className="rounded-xl hover:opacity-70 h-1000 w-500"
+                                                className="rounded-xl hover:opacity-70"
                                                 src={project.image}
                                                 alt="" 
                                                 width={1000} 
