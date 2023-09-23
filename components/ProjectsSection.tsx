@@ -220,7 +220,7 @@ const ProjectsSection = () => {
             </div>
 
             <br/>
-            <h1 className="mt-10 text-left font-bold text-2xl">
+            <h1 className="mt-4 text-left font-bold text-2xl">
                 Tech Projects
             </h1>
             <div className="min-h-screen flex items-center justify-center"> 
