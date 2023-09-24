@@ -14,6 +14,16 @@ const FlickerSection = () => {
                 Flicker 2D Platform Game
             </h1>
 
+            <div className="text-center flex item-center justify-center mt-8">
+                <Image 
+                    className="rounded-lg"
+                    src="/Flicker/gameLong.jpg"
+                    alt="" 
+                    width={1000} 
+                    height={1000}>
+                </Image>
+            </div>
+
             <div className="mt-8">
                 A spooky 2D side-scroller game.
 
@@ -33,24 +43,6 @@ const FlickerSection = () => {
                 Your goal? Survive as long as possible.
             </div>
 
-            <div className="">
-                <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/Flicker/Flicker GamePlay.mp4" />
-                </video>
-            </div>
-
-            <div className="mt-4 flex flex-row align-bottom space-x-4">
-                {tags.map((item, idx) => {
-                    return (
-                        <p key={idx}
-                            className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
-                            >
-                            {item.skill}
-                        </p>
-                    )
-                })}
-            </div>
-
             <br/>
             <h1 className="text-left font-bold text-2xl">
                 Overview
@@ -59,7 +51,7 @@ const FlickerSection = () => {
                 <div className="md:w-3/5 text:left">
                     <div>
                         Flicker is a 2D platform game I created in a group of three in a 24-hour GameJam coding event.
-                        The video above shows the final product and demonstrates Flicker's gameplay.
+                        The video below shows the final product and demonstrates Flicker's gameplay.
                     </div>
 
                     <br/>
@@ -74,7 +66,21 @@ const FlickerSection = () => {
 
                     <br/>
 
+                    <div className="flex flex-row align-bottom space-x-4">
+                        {tags.map((item, idx) => {
+                            return (
+                                <p key={idx}
+                                    className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                    >
+                                    {item.skill}
+                                </p>
+                            )
+                        })}
+                    </div>
+
                 </div>
+
+                
                 <div className="md:w-2/5 text-right item-center justify-center mt-8">
                     <Image 
                         className="rounded-lg"
@@ -88,59 +94,27 @@ const FlickerSection = () => {
 
             <br/>
 
-            <h1 className="mt-8 text-left font-bold text-2xl">
-                Screens
-            </h1>
+            <div className="">
+                <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
+                    <source src="/Flicker/Flicker GamePlay.mp4" />
+                </video>
+            </div>
 
-            <div className="flex flex-col text-center items-center justify-center sm:my-10 md:my-2 px-10 sm:py-10 md:flex-row md:space-x-4 md:text-left md:py-8">
-                <div className="md:w-1/2">
-                    <Image src="/Flicker/game1.png" alt="" width={500} height={500}/>
-                </div>
+            <div className="mb-4 flex flex-col mt-8 text-center items-center justify-center sm:my-10 md:my-2 px-10 sm:py-10 md:flex-row md:space-x-4 md:text-left md:py-8">
+                
                 <div className="md:w-2/5">
-                    <Image src="/Flicker/trainmid.png" alt="" width={500} height={500}/>
+                    <div className="mb-3">
+                        Here are some screenshots of the train pixel art featured in the 
+                        game! This was my first time working with pixel art - very 
+                        different from the digital illustrations I usually make, 
+                        but very fun to design the train out.
+                    </div>
+                    <Image src="/Flicker/train1.png" alt="" width={600} height={600}/>
+                </div>
+                <div className="md:w-3/5 mt-8">
+                    <Image src="/Flicker/train2.png" alt="" width={600} height={600}/>
                 </div>
             </div>
-
-            <div className="text-center flex item-center justify-center mt-8">
-                <Image 
-                    className="rounded-xl"
-                    src="/Pinboard/pinb1.png"
-                    alt="" 
-                    width={800} 
-                    height={800}>
-                </Image>
-            </div>
-
-            <div className="text-center flex item-center justify-center mt-8">
-                <Image 
-                    className="rounded-xl"
-                    src="/Pinboard/pinb2.png"
-                    alt="" 
-                    width={800} 
-                    height={800}>
-                </Image>
-            </div>
-
-            <div className="text-center flex item-center justify-center mt-8">
-                <Image 
-                    className="rounded-xl"
-                    src="/Pinboard/pinb3.png"
-                    alt="" 
-                    width={800} 
-                    height={800}>
-                </Image>
-            </div>
-
-            <div className="text-center flex item-center justify-center mt-8">
-                <Image 
-                    className="rounded-xl"
-                    src="/Pinboard/pinb4.png"
-                    alt="" 
-                    width={800} 
-                    height={800}>
-                </Image>
-            </div>
-
         </section>
     )
 }

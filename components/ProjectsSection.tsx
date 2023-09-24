@@ -25,7 +25,7 @@ const graphicsProjects = [
         name: "Mini Minecraft: Pandora's Blocks",
         description: 
             "An Avatar inspired mini version of minecraft! A group final project for CIS 4600/5600.", 
-        image: "/Minecraft/minecraftThumb2.png",
+        image: "/Minecraft/mcthumbnail.jpg",
         github: "",
         link: "/projects/miniMinecraft",
         tags: [
@@ -79,12 +79,12 @@ const graphicsProjects = [
 
 const artProjects = [
     {
-        name: "Diner Environment",
+        name: "Underwater Retro Diner Environment",
         description: 
             "An environment.", 
-        image: "/Minecraft/minecraftThumb2.png",
+        image: "/3dArt/dinerthumb.jpg",
         github: "",
-        link: "/projects/miniMinecraft",
+        link: "/projects/dinerArt",
         tags: [
             { skill: "Maya"},
             { skill: "Photoshop"},
@@ -93,12 +93,33 @@ const artProjects = [
     {
         name: "Gertrude",
         description: 
-            "A mini version of the 3D modeling software Maya. " + 
-            "Uses a half edge data structure and implements basic 3D mesh operations, like deforming meshes and splitting faces" + 
-            "Supports smoothing using Catmull-Clark subdivision and skinning so that a skeleton can be used to modify meshes.",
-        image: "/MicroMayaDemos/Cow Thumb.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/microMaya",
+            "A character model of Gertrude, from Skottie Young's I Hate Fairyland",
+        image: "/3dArt/gertrude.jpg",
+        github:"",
+        link: "/projects/gertrudeArt",
+        tags: [
+            { skill: "Maya"},
+        ]
+    },
+    {
+        name: "Noodle",
+        description: 
+            "A character model based on the 2D art of Noodle from the Gorillaz band.", 
+        image: "/3dArt/nsthumb.jpg",
+        github: "",
+        link: "/projects/noodleArt",
+        tags: [
+            { skill: "Maya"},
+            { skill: "ZBrush"},
+        ]
+    },
+    {
+        name: "Chili Lights Restaurant",
+        description: 
+            "A mini version of the 3D modeling software Maya. ",
+        image: "/3dArt/restthumb.jpg",
+        github: "",
+        link: "/projects/chiliArt",
         tags: [
             { skill: "Maya"},
         ]
@@ -138,7 +159,7 @@ const projects = [
         name: "Fun Food Finder",
         description: 
             "A web-scraping food app that locates recipes based on user-entered filters",
-        image: "/FunFood/FFF.png",
+        image: "/FunFood/thumbfff.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/funFood",
         tags: [
@@ -151,7 +172,7 @@ const projects = [
         name: "Pinboard iOS Mobile App",
         description: 
             "Pinboard is a social app for high school communities where students can post information about school events & clubs",
-        image: "/Pinboard/pinboard.png",
+        image: "/Pinboard/square.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/pinboardProject",
         tags: [
@@ -310,11 +331,11 @@ const ProjectsSection = () => {
             <br/>
 
             <h1 className="mt-8 text-left font-bold text-2xl">
-                3D Projects
+                3D Art Projects
             </h1>
 
             <div className="min-h-screen flex items-center justify-center"> 
-                <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8">
+                <div className="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8">
                     {artProjects.map((project, idx) => {
                         return (
                             <div key={idx}>
