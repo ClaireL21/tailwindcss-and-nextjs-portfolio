@@ -66,9 +66,9 @@ const graphicsProjects = [
         name: "Shader Fun",
         description: 
             "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+        image: "/ShaderFunMario/mario4.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/shaderFun",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},
