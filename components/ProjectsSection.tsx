@@ -91,7 +91,7 @@ const artProjects = [
         ]
     },
     {
-        name: "Micro Maya",
+        name: "Gertrude",
         description: 
             "A mini version of the 3D modeling software Maya. " + 
             "Uses a half edge data structure and implements basic 3D mesh operations, like deforming meshes and splitting faces" + 
@@ -100,9 +100,7 @@ const artProjects = [
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/microMaya",
         tags: [
-            { skill: "C++"},
-            { skill: "GLSL"},
-            { skill: "Qt"},
+            { skill: "Maya"},
         ]
     },
 ]
@@ -162,16 +160,17 @@ const projects = [
         ]
     },
     {
-        name: "Flicker Game",
+        name: "Flicker 2D Platform Game",
         description: 
             "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+        image: "/Flicker/thumb.jpg",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/flickerProject",
         tags: [
-            { skill: "C++"},
-            { skill: "GLSL"},
-            { skill: "Qt"},
+            { skill: "Unity"},
+            { skill: "C#"},
+            { skill: "Clip Studio Paint"},
+            { skill: "Procreate"},
         ]
     },
 ]

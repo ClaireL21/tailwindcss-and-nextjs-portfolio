@@ -92,9 +92,11 @@ const PinboardSection = () => {
                 Video Demo
             </h1>
 
-            <video>
-                
-            </video>
+            <div className="mt-8">
+                <video controls style={{ width: '1000px', height: '500px' }}>
+                    <source src="/Pinboard/Presentation.mp4" />
+                </video>
+            </div>
 
             <h1 className="mt-8 text-left font-bold text-2xl">
                 Screens
@@ -103,15 +105,48 @@ const PinboardSection = () => {
             <div className="text-center flex item-center justify-center mt-8">
                 <Image 
                     className="rounded-xl"
-                    src="/FunFood/fff2.png"
+                    src="/Pinboard/pinb1.png"
                     alt="" 
                     width={800} 
                     height={800}>
                 </Image>
             </div>
 
+            <div className="text-center flex item-center justify-center mt-8">
+                <Image 
+                    className="rounded-xl"
+                    src="/Pinboard/pinb2.png"
+                    alt="" 
+                    width={800} 
+                    height={800}>
+                </Image>
+            </div>
 
-            
+            <div className="text-center flex item-center justify-center mt-8">
+                <Image 
+                    className="rounded-xl"
+                    src="/Pinboard/pinb3.png"
+                    alt="" 
+                    width={800} 
+                    height={800}>
+                </Image>
+            </div>
+
+            <div className="text-center flex item-center justify-center mt-8">
+                <Image 
+                    className="rounded-xl"
+                    src="/Pinboard/pinb4.png"
+                    alt="" 
+                    width={800} 
+                    height={800}>
+                </Image>
+            </div>
+
+            <div className="flex justify-center items-center mt-8">
+                <video autoPlay loop muted style={{ width: '500', height: '500px' }}>
+                    <source src="/Pinboard/pinbgif.mp4" />
+                </video>
+            </div>
 
         </section>
     )
