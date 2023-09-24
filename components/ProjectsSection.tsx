@@ -24,7 +24,7 @@ const graphicsProjects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",
         description: 
-            "Mini Minecraft: Pandora's Blocks is a final project for CIS 4600/5600.", 
+            "An Avatar inspired mini version of minecraft! A group final project for CIS 4600/5600.", 
         image: "/Minecraft/minecraftThumb2.png",
         github: "",
         link: "/projects/miniMinecraft",
@@ -38,9 +38,8 @@ const graphicsProjects = [
         name: "Micro Maya",
         description: 
             "A mini version of the 3D modeling software Maya. " + 
-            "I represented models using a half edge data structure and implemented basic 3D mesh operations, including" + 
-            " deforming meshes, splitting edges, triangulation, and smoothing using Catmull-Clark subdivision." + 
-            " Micro Maya also supports skinning so that a skeleton can be attached to a mesh and modified by the user via joint transformations and rotations.",
+            "Uses a half edge data structure and implements basic 3D mesh operations, like deforming meshes and splitting faces" + 
+            ". Supports smoothing using Catmull-Clark subdivision and skinning so that a skeleton can be used to modify meshes.",
         image: "/MicroMayaDemos/Cow Thumb.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/microMaya",
@@ -95,9 +94,8 @@ const artProjects = [
         name: "Micro Maya",
         description: 
             "A mini version of the 3D modeling software Maya. " + 
-            "I represented models using a half edge data structure and implemented basic 3D mesh operations, including" + 
-            " deforming meshes, splitting edges, triangulation, and smoothing using Catmull-Clark subdivision." + 
-            " Micro Maya also supports skinning so that a skeleton can be attached to a mesh and modified by the user via joint transformations and rotations.",
+            "Uses a half edge data structure and implements basic 3D mesh operations, like deforming meshes and splitting faces" + 
+            "Supports smoothing using Catmull-Clark subdivision and skinning so that a skeleton can be used to modify meshes.",
         image: "/MicroMayaDemos/Cow Thumb.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/microMaya",
@@ -113,11 +111,9 @@ const projects = [
     {
         name: "High Resolution 3D Models of Formal Dresses",
         description: 
-            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry" +
-            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry"+
-            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry"+
-            "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry",
-        image: "/highres.png",
+            "Used LIDAR & Photogrammetry as methods of 3D scanning " +
+            "and integrated dress renders into the Queenly iOS app.",
+        image: "/HighResDress/Cover.png",
         github: "",
         link: "/projects/highResDress",
         tags: [
@@ -129,8 +125,9 @@ const projects = [
     {
         name: "Follow/Following Project",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+            "A Queenly internship project involving implementing the Follow/Following" +
+            " feature for the iOS app.",
+        image: "/FollowProj/Projects.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/followProject",
         tags: [
@@ -142,27 +139,26 @@ const projects = [
     {
         name: "Fun Food Finder",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+            "A web-scraping food app that locates recipes based on user-entered filters",
+        image: "/FunFood/FFF.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/funFood",
         tags: [
-            { skill: "C++"},
-            { skill: "GLSL"},
-            { skill: "Qt"},
+            { skill: "Java"},
+            { skill: "Web scraping"},
+            { skill: "Jsoup"},
         ]
     },
     {
         name: "Pinboard iOS Mobile App",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/headshot.png",
+            "Pinboard is a social app for high school communities where students can post information about school events & clubs",
+        image: "/Pinboard/pinboard.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/pinboardProject",
         tags: [
-            { skill: "C++"},
-            { skill: "GLSL"},
-            { skill: "Qt"},
+            { skill: "Swift"},
+            { skill: "Xcode"},
         ]
     },
     {
@@ -251,10 +247,73 @@ const ProjectsSection = () => {
             </div>
 
             <br/>
-
-            <h1 className="text-left font-bold text-2xl">
-                3D Art Projects
+            <h1 className="mt-4 text-left font-bold text-2xl">
+                Tech Projects
             </h1>
+            <div className="min-h-screen flex items-center justify-center"> 
+                <div className="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8">
+                    {projects.map((project, idx) => {
+                        return (
+                            <div key={idx}>
+                            <SlideUp offset="-100px 0px -100px 0px">
+                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-4">
+                                    <div className="mt-8 ">
+                                        <Link href={project.link} target="_blank">
+                                            <Image 
+                                                className="rounded-xl hover:opacity-70"
+                                                src={project.image}
+                                                alt="" 
+                                                width={1000} 
+                                                height={1000}>
+                                            </Image>
+                                        </Link>
+                                    </div>
+                                    <div className="mt-8 ">
+                                        <h1 className="text-xl font-bold mb-2 underline hover:text-yellow-600">
+                                            <Link href={project.link} target="_blank">
+                                                {project.name}
+                                            </Link></h1>
+                                        <p className="leading-7 mb-4 text-neutral-900"> 
+                                            {project.description}
+                                        </p>
+                                        <div className="flex flex-row align-bottom space-x-4">
+                                            {project.tags.map((item, idx) => {
+                                                return (
+                                                    <p key={idx}
+                                                        className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                                        >
+                                                        {item.skill}
+                                                    </p>
+                                                )
+                                            })}
+                                            {/* <Link href={project.github} target="_blank">
+                                                <BsGithub
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link>
+                                            <Link href={project.link} target="_blank">
+                                                <BsArrowUpRightSquare
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </SlideUp>
+                        </div>
+                        ) 
+                    })}
+                </div>
+            </div>
+
+            <br/>
+
+            <h1 className="mt-8 text-left font-bold text-2xl">
+                3D Projects
+            </h1>
+
             <div className="min-h-screen flex items-center justify-center"> 
                 <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8">
                     {artProjects.map((project, idx) => {
@@ -293,72 +352,6 @@ const ProjectsSection = () => {
                                                     </p>
                                                 )
                                             })}
-                                            {/* <Link href={project.github} target="_blank">
-                                                <BsGithub
-                                                    size={30}
-                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
-                                                />
-                                            </Link>
-                                            <Link href={project.link} target="_blank">
-                                                <BsArrowUpRightSquare
-                                                    size={30}
-                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
-                                                />
-                                            </Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </SlideUp>
-                        </div>
-                        ) 
-                    })}
-                </div>
-            </div>
-
-
-            <br/>
-            <h1 className="mt-4 text-left font-bold text-2xl">
-                Tech Projects
-            </h1>
-            <div className="min-h-screen flex items-center justify-center"> 
-                <div className="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8">
-                    {projects.map((project, idx) => {
-                        return (
-                            <div key={idx}>
-                            <SlideUp offset="-100px 0px -100px 0px">
-                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-4">
-                                    <div className="mt-8 ">
-                                        <Link href={project.link} target="_blank">
-                                            <Image 
-                                                className="rounded-xl hover:opacity-70"
-                                                src={project.image}
-                                                alt="" 
-                                                width={1000} 
-                                                height={1000}>
-                                            </Image>
-                                        </Link>
-                                    </div>
-                                    <div className="mt-8 ">
-                                        <h1 className="text-xl font-bold mb-2 underline hover:text-yellow-600">
-                                            <Link href={project.link} target="_blank">
-                                                {project.name}
-                                            </Link></h1>
-                                        <p className="leading-7 mb-4 text-neutral-900"> 
-                                            {project.description}
-                                        </p>
-                                        <div className="flex flex-row align-bottom space-x-4">
-                                            <Link href={project.github} target="_blank">
-                                                <BsGithub
-                                                    size={30}
-                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
-                                                />
-                                            </Link>
-                                            <Link href={project.link} target="_blank">
-                                                <BsArrowUpRightSquare
-                                                    size={30}
-                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
-                                                />
-                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -373,6 +366,18 @@ const ProjectsSection = () => {
         </section>
     )
 
+    {/* <Link href={project.github} target="_blank">
+                                                <BsGithub
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link>
+                                            <Link href={project.link} target="_blank">
+                                                <BsArrowUpRightSquare
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link> */}
     // return (
     //     <section id="projects">
     //         <h1 className="text-center font-bold text-3xl">
