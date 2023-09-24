@@ -78,6 +78,37 @@ const graphicsProjects = [
     },
 ]
 
+const artProjects = [
+    {
+        name: "Diner Environment",
+        description: 
+            "An environment.", 
+        image: "/Minecraft/minecraftThumb2.png",
+        github: "",
+        link: "/projects/miniMinecraft",
+        tags: [
+            { skill: "Maya"},
+            { skill: "Photoshop"},
+        ]
+    },
+    {
+        name: "Micro Maya",
+        description: 
+            "A mini version of the 3D modeling software Maya. " + 
+            "I represented models using a half edge data structure and implemented basic 3D mesh operations, including" + 
+            " deforming meshes, splitting edges, triangulation, and smoothing using Catmull-Clark subdivision." + 
+            " Micro Maya also supports skinning so that a skeleton can be attached to a mesh and modified by the user via joint transformations and rotations.",
+        image: "/MicroMayaDemos/Cow Thumb.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "/projects/microMaya",
+        tags: [
+            { skill: "C++"},
+            { skill: "GLSL"},
+            { skill: "Qt"},
+        ]
+    },
+]
+
 const projects = [
     {
         name: "High Resolution 3D Models of Formal Dresses",
@@ -88,7 +119,7 @@ const projects = [
             "High Resolution 3D Models of Formal Dresses using LIDAR and Photogrammetry",
         image: "/highres.png",
         github: "",
-        link: "",
+        link: "/projects/highResDress",
         tags: [
             { skill: "Swift"},
             { skill: "Objective-C"},
@@ -101,7 +132,7 @@ const projects = [
             "Project 1 is an awesome project. you should be jealous of my awesome project",
         image: "/headshot.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "https://53claire.wixsite.com/claire-lu",
+        link: "/projects/followProject",
         tags: [
             { skill: "Swift"},
             { skill: "Objective-C"},
@@ -218,6 +249,72 @@ const ProjectsSection = () => {
                     })}
                 </div>
             </div>
+
+            <br/>
+
+            <h1 className="text-left font-bold text-2xl">
+                3D Art Projects
+            </h1>
+            <div className="min-h-screen flex items-center justify-center"> 
+                <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8">
+                    {artProjects.map((project, idx) => {
+                        return (
+                            <div key={idx}>
+                            <SlideUp offset="-100px 0px -100px 0px">
+                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-4">
+                                    <div className="mt-10">
+                                        <Link href={project.link} target="_blank">
+                                            <Image 
+                                                className="rounded-xl hover:opacity-70"
+                                                src={project.image}
+                                                alt="" 
+                                                width={1000} 
+                                                height={100}>
+                                            </Image>
+                                        </Link>
+                                    </div>
+                                    <div className="mt-8">
+                                        <h1 className="text-xl underline hover:text-yellow-600 font-bold mb-2">
+                                            <Link href={project.link} target="_blank">
+                                                {project.name}
+                                            </Link>
+                                        </h1>
+
+                                        <p className="leading-7 mb-4 text-neutral-900"> 
+                                            {project.description}
+                                        </p>
+                                        <div className="flex flex-row align-bottom space-x-4">
+                                            {project.tags.map((item, idx) => {
+                                                return (
+                                                    <p key={idx}
+                                                        className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                                        >
+                                                        {item.skill}
+                                                    </p>
+                                                )
+                                            })}
+                                            {/* <Link href={project.github} target="_blank">
+                                                <BsGithub
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link>
+                                            <Link href={project.link} target="_blank">
+                                                <BsArrowUpRightSquare
+                                                    size={30}
+                                                    className="hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </SlideUp>
+                        </div>
+                        ) 
+                    })}
+                </div>
+            </div>
+
 
             <br/>
             <h1 className="mt-4 text-left font-bold text-2xl">
