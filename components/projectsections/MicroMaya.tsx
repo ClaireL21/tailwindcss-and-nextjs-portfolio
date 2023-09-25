@@ -185,11 +185,11 @@ const MicroMayaSection = () => {
                     <div className="flex item-center justify-center">
                         
                         <Image 
-                            className=""
+                            className="rounded-sm"
                             src="/MicroMayaDemos/Cow.gif"
                             alt="" 
-                            width={300} 
-                            height={300}>
+                            width={450} 
+                            height={400}>
                         </Image>
                         {/* <video loop autoPlay muted className="h-[200px] w-auto">
                             <source src="/MicroMayaDemos/Cow Demo Cropped.mp4" />

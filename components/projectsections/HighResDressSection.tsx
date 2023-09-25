@@ -76,11 +76,11 @@ const HighResDressSection = () => {
                 <div className="md:w-2/5 text-right mt-8"> 
                 {/* //flex item-center justify-center */}
                     <Image 
-                        className="rounded-xl"
+                        className=""
                         src="/HighResDress/Frame 10.png"
                         alt="" 
                         width={500} 
-                        height={300}>
+                        height={500}>
                     </Image>
                 </div>
             </div>
