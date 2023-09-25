@@ -33,9 +33,23 @@ const AboutSection = () => {
         <section id="about">
             <div className="my-12 pb-12 md:pt-16 md:pb-20">
                 <h1 className="md:text-left p-4 text-center font-bold text-3xl">
+                    Demo Reel
+                    {/* <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr> flex-col */}
+                </h1>
+
+                <div className="mt-8">
+                    <video autoPlay controls className="h-[500px] w-auto" style={{ width: '1000px', height: '500px' }}>
+                        <source src="/Demo Reel.mp4" />
+                    </video>
+                </div>
+
+                <br/>
+
+                <h1 className="mt-8 md:text-left p-4 text-center font-bold text-3xl">
                     About Me
                     {/* <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr> flex-col */}
                 </h1>
+
                 <div className="space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-10 md:space-x-10">
                     <div> {/*className="md:w-4/5"*/}
                         {/* <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
@@ -84,20 +98,20 @@ const AboutSection = () => {
                         </Link>
 
                         <Link
-                            href="projects"
+                            href="/resume"
                             className="text-neutral-900 font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
                             >
                                 Resume
                                 <hr className="w-8 h-1 mx-auto my-2 bg-yellow-500 border-0 rounded"></hr>
                         </Link>
 
-                        <Link
+                        {/* <Link
                             href="projects"
                             className="text-neutral-900 font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
                             >
                                 Demo Reel
                                 <hr className="w-8 h-1 mx-auto my-2 bg-yellow-500 border-0 rounded"></hr>
-                        </Link>
+                        </Link> */}
                     </div>
                     {/* <div className="md:w-1/2">
                         <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
