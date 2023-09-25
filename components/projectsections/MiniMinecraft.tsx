@@ -43,7 +43,7 @@ const MiniMinecraftSection = () => {
             </h1>
           
             <div className="flex flex-col space-y-2 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-                <div className="md:w-2/5 text:left">
+                <div className="md:w-3/5 text:left">
                     <div>
                         For the player physics, I implemented player movement, including flight mode and ground mode, 
                         as well as building and breaking blocks. 
@@ -58,10 +58,14 @@ const MiniMinecraftSection = () => {
                         return the block before the intersection (i.e. the adjacent block).
                     </div>
                 </div>
-                <div className="md:w-3/5 text-right flex item-center justify-center mt-8">
-                    <video loop autoPlay muted className="h-[300px] w-auto">
-                        <source src="/Minecraft/player physics.mp4" />
-                    </video>
+                <div className="md:w-2/5 text-right item-center justify-center mt-8">
+                    <Image 
+                        className=""
+                        src="/Minecraft/player physics.gif"
+                        alt="" 
+                        width={450} 
+                        height={300}>
+                    </Image>
                 </div>
             </div>
 
@@ -92,9 +96,13 @@ const MiniMinecraftSection = () => {
             <br/>
 
             <div className="flex item center items-stretch justify-center">
-                <video loop autoPlay muted className="h-[300px] w-auto">
-                    <source src="/Minecraft/MC multithreading Birds Eye2.mp4" />
-                </video>
+                <Image 
+                    className=""
+                    src="/Minecraft/MC multithreading Birds Eye2.gif"
+                    alt="" 
+                    width={400} 
+                    height={400}>
+                </Image>
             </div>
 
             <br/>
@@ -130,17 +138,25 @@ const MiniMinecraftSection = () => {
             <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
                 <div className="md:w-1/2 text:left">
                     <div className="flex item-center justify-center">
-                        <video loop autoPlay muted className="h-[300px] w-auto">
-                            <source src="/Minecraft/MC multithreading 1.mp4" />
-                        </video>
+                        <Image 
+                            className=""
+                            src="/Minecraft/MC multithreading 1.gif"
+                            alt="" 
+                            width={400} 
+                            height={400}>
+                        </Image>
                     </div>
                 </div>
 
                 <div className="md:w-1/2 text:right">
                     <div className="flex item-center justify-center">
-                        <video loop autoPlay muted className="h-[300px] w-auto">
-                            <source src="/Minecraft/MC multithreading 2.mp4" />
-                        </video>
+                        <Image 
+                            className=""
+                            src="/Minecraft/MC multithreading 2.gif"
+                            alt="" 
+                            width={400} 
+                            height={400}>
+                        </Image>
                     </div>
                 </div>
             </div>
@@ -271,9 +287,13 @@ const MiniMinecraftSection = () => {
             </div>
 
             <div className="mt-8 flex item center items-stretch justify-center">
-                <video loop autoPlay muted className="h-[300px] w-auto">
-                    <source src="/Minecraft/MC biome blending.mp4" />
-                </video>
+                <Image 
+                    className=""
+                    src="/Minecraft/MC biome blending.gif"
+                    alt="" 
+                    width={500} 
+                    height={500}>
+                </Image>
             </div>
 
             
