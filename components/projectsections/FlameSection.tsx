@@ -31,10 +31,14 @@ const FlameSection = () => {
                 Procedural Flame Character
             </h1>
 
-            <div className="mt-8">
-                <video loop autoPlay muted className="h-[500px] w-auto" style={{ width: '1000px', height: '500px' }}>
-                    <source src="/FlameImages/flame loop.mp4" />
-                </video>
+            <div className="items-center justify-center flex mt-8">
+                <Image 
+                    className=""
+                    src="/FlameImages/flame loop.gif"
+                    alt="" 
+                    width={500} 
+                    height={500}>
+                </Image>
             </div>
 
             <h1 className="mt-8 text-left font-bold text-2xl">

@@ -83,9 +83,9 @@ const ShaderFunSection = () => {
             </div>
 
             <div className="mt-8">
-                <video autoPlay loop muted controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/ShaderFunMario/Mario surface.mp4" />
-                </video>
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/snBHZ33sL60" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             <br/>
@@ -114,9 +114,10 @@ const ShaderFunSection = () => {
             </div>
 
             <div className="mt-8">
-                <video autoPlay loop muted controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/ShaderFunMario/Mario post process.mp4" />
-                </video>
+
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/_xx0KmR1Yuo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             
