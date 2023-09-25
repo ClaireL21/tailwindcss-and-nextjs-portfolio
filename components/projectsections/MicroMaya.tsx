@@ -120,9 +120,13 @@ const MicroMayaSection = () => {
 
             <div className="flex items-center justify-center"> 
                 <div className="mt-8 md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8">
-                    <video loop autoPlay muted className="h-[200px] w-auto">
-                        <source src="/MicroMayaDemos/Micro Maya Subdivision Demo.mp4" />
-                    </video>
+                    <Image 
+                        className=""
+                        src="/MicroMayaDemos/Subdivision.gif"
+                        alt="" 
+                        width={300} 
+                        height={300}>
+                    </Image>
 
                     <div className="mt-8 flex items-center justify-center"> 
                         <div className="grid grid-cols-3 grid-rows-1 gap-8">
@@ -179,9 +183,17 @@ const MicroMayaSection = () => {
 
                 <div className="md:w-2/5 text:right">
                     <div className="flex item-center justify-center">
-                        <video loop autoPlay muted className="h-[200px] w-auto">
+                        
+                        <Image 
+                            className=""
+                            src="/MicroMayaDemos/Cow.gif"
+                            alt="" 
+                            width={300} 
+                            height={300}>
+                        </Image>
+                        {/* <video loop autoPlay muted className="h-[200px] w-auto">
                             <source src="/MicroMayaDemos/Cow Demo Cropped.mp4" />
-                        </video>
+                        </video> */}
                     </div>
                 </div>
             </div>
