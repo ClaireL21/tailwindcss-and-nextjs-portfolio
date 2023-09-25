@@ -34,27 +34,21 @@ const AboutSection = () => {
             <div className="my-12 pb-12 md:pt-16 md:pb-20">
                 <h1 className="md:text-left p-4 text-center font-bold text-3xl">
                     Demo Reel
-                    {/* <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr> flex-col */}
                 </h1>
-
                 <div className="mt-8">
-                    <video autoPlay controls className="h-[500px] w-auto" style={{ width: '1000px', height: '500px' }}>
-                        <source src="/Demo Reel.mp4" />
-                    </video>
+                    <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/Ica-MqUs8B4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
                 </div>
 
                 <br/>
 
                 <h1 className="mt-8 md:text-left p-4 text-center font-bold text-3xl">
                     About Me
-                    {/* <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr> flex-col */}
                 </h1>
 
                 <div className="space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-10 md:space-x-10">
-                    <div> {/*className="md:w-4/5"*/}
-                        {/* <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-                            Get to know me!
-                        </h1> */}
+                    <div> 
                         <p>
                             As a DMD major, I've been exploring{" "}
                             <span className="font-bold">{"graphics programming"}</span>,

@@ -13,10 +13,10 @@ const MiniMinecraftSection = () => {
                 Mini Minecraft: Pandora's Blocks
             </h1>
 
-            <div className="mt-8">
-                <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/mini minecraft.mp4" />
-                </video>
+            <div className="mt-8">                
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/XnAmGhJppd0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             <div className="mt-8">

@@ -14,9 +14,9 @@ const MicroMayaSection = () => {
             </h1>
 
             <div className="mt-8">
-                <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/MicroMayaDemos/Micro Maya Cow Demo.mp4" />
-                </video>
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/zqHE7DNjLBM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             <div className="mt-8">
@@ -77,10 +77,14 @@ const MicroMayaSection = () => {
                         To the right is an example showing the process of triangulation on the face of a dodecahedron.
                     </div>
                 </div>
-                <div className="md:w-2/5 text-right flex item-center justify-center mt-8">
-                    <video loop autoPlay muted className="h-[200px] w-auto">
-                        <source src="/MicroMayaDemos/Catmull triangulation demo.mp4" />
-                    </video>
+                <div className="md:w-2/5 text-right mt-8">
+                    <Image 
+                        className=""
+                        src="/MicroMayaDemos/Triangulation.gif"
+                        alt="" 
+                        width={400} 
+                        height={400}>
+                    </Image>
                 </div>
             </div>
 
