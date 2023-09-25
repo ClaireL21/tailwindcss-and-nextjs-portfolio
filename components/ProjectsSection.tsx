@@ -50,22 +50,21 @@ const graphicsProjects = [
         ]
     },
     {
-        name: "Procedural Flame",
+        name: "Procedural Flame Character",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
-        image: "/MicroMayaDemos/gui screen.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/miniMinecraft",
+            "A procedurally generated flame character, made in CIS 5660.",
+        image: "/FlameImages/thumb2.png",
+        github: "",
+        link: "/projects/procedFlame",
         tags: [
-            { skill: "C++"},
+            { skill: "Typescript"},
             { skill: "GLSL"},
-            { skill: "Qt"},
         ]
     },
     {
         name: "Shader Fun",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
+            "A collection of surface and post-processing shaders applied on a 3D mesh of Mario.",
         image: "/ShaderFunMario/mario4.png",
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
         link: "/projects/shaderFun",
@@ -156,6 +155,18 @@ const projects = [
         ]
     },
     {
+        name: "Pinboard iOS Mobile App",
+        description: 
+            "Pinboard is a social app for high school communities where students can post information about school events & clubs",
+        image: "/Pinboard/square.png",
+        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        link: "/projects/pinboardProject",
+        tags: [
+            { skill: "Swift"},
+            { skill: "Xcode"},
+        ]
+    },
+    {
         name: "Fun Food Finder",
         description: 
             "A web-scraping food app that locates recipes based on user-entered filters",
@@ -169,23 +180,11 @@ const projects = [
         ]
     },
     {
-        name: "Pinboard iOS Mobile App",
-        description: 
-            "Pinboard is a social app for high school communities where students can post information about school events & clubs",
-        image: "/Pinboard/square.png",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/pinboardProject",
-        tags: [
-            { skill: "Swift"},
-            { skill: "Xcode"},
-        ]
-    },
-    {
         name: "Flicker 2D Platform Game",
         description: 
-            "Project 1 is an awesome project. you should be jealous of my awesome project",
+            "A spooky 2D platform game, created in a 24-hr Game Jam.",
         image: "/Flicker/thumb.jpg",
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/flickerProject",
         tags: [
             { skill: "Unity"},
