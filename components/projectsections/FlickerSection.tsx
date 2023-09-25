@@ -95,9 +95,9 @@ const FlickerSection = () => {
             <br/>
 
             <div className="">
-                <video autoPlay controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/Flicker/Flicker GamePlay.mp4" />
-                </video>
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/V994Bc4lgXM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             <div className="mb-4 flex flex-col mt-8 text-center items-center justify-center sm:my-10 md:my-2 px-10 sm:py-10 md:flex-row md:space-x-4 md:text-left md:py-8">

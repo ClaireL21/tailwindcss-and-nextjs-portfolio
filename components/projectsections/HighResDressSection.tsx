@@ -208,11 +208,10 @@ const HighResDressSection = () => {
                         </a> I made on high resolution 3D scans for more information! 
                     </div>
                 </div>
-                <div className="md:w-1/2 text-right mt-8"> 
-                {/* //flex item-center justify-center */}
-                    <video loop autoPlay muted className="h-[800px] w-auto">
-                        <source src="/HighResDress/3d model demo 2.mp4" />
-                    </video>
+                <div className="md:w-1/2 text-right mt-8 items-center justify-center flex "> 
+                    <div className="h-[600px] w-[400px] aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/J1HFLx0STAg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
                 </div>
             </div>
 

@@ -93,9 +93,9 @@ const PinboardSection = () => {
             </h1>
 
             <div className="mt-8">
-                <video controls style={{ width: '1000px', height: '500px' }}>
-                    <source src="/Pinboard/Presentation.mp4" />
-                </video>
+                <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/jLJlH2Lxqfo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
 
             <h1 className="mt-8 text-left font-bold text-2xl">
@@ -143,9 +143,13 @@ const PinboardSection = () => {
             </div>
 
             <div className="flex justify-center items-center mt-8">
-                <video autoPlay loop muted style={{ width: '500', height: '500px' }}>
-                    <source src="/Pinboard/pinbgif.mp4" />
-                </video>
+                <Image 
+                    className=""
+                    src="/Pinboard/pinboard.gif"
+                    alt="" 
+                    width={200} 
+                    height={200}>
+                </Image>
             </div>
 
         </section>

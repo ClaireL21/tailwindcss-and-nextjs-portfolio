@@ -73,14 +73,12 @@ const FollowProjectSection = () => {
                             )
                         })}
                     </div>
-                    
                 </div>
-
                 <div className="mt-8 md:w-1/2 text:right">
                     <div className="flex item-center justify-center">
-                        <video loop autoPlay muted className="h-[600px] w-auto">
-                            <source src="/FollowProj/FollowDem.mp4" />
-                        </video>
+                        <div className="h-[600px] w-[400px] aspect-w-16 aspect-h-9">
+                            <iframe src="https://www.youtube.com/embed/ViZbVP2p-14" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
