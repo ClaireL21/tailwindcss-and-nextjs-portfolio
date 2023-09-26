@@ -19,23 +19,27 @@ import { ThemeProvider } from 'next-themes'
 //   </React.StrictMode>,
 // )
 
+import { useTheme } from "next-themes"
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const { systemTheme, theme, setTheme } = useTheme()
+
   return (
+    
     <html lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head/>
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-            <div className='mt-36'>
+          <Navbar/>
+            <div className="mt-36">
               {children}
             </div>
           <Footer />
@@ -44,3 +48,16 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+{/* <head/>
+      <body>
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Navbar/>
+            <div className="mt-36">
+              {children}
+            </div>
+          <Footer />
+        </ThemeProvider>
+      </body>
+    </html> */}

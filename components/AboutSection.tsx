@@ -85,7 +85,7 @@ const AboutSection = () => {
                     <div className='items-stretch justify-center flex flex-row space-x-4 md:space-x-40'>
                         <Link
                             href="projects"
-                            className="text-neutral-900 font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
+                            className="font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
                             >
                                 Projects
                                 <hr className="w-8 h-1 mx-auto my-2 bg-yellow-500 border-0 rounded"></hr>
@@ -93,7 +93,7 @@ const AboutSection = () => {
 
                         <Link
                             href="/resume"
-                            className="text-neutral-900 font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
+                            className="font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
                             >
                                 Resume
                                 <hr className="w-8 h-1 mx-auto my-2 bg-yellow-500 border-0 rounded"></hr>
@@ -101,7 +101,7 @@ const AboutSection = () => {
 
                         {/* <Link
                             href="projects"
-                            className="text-neutral-900 font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
+                            className="font-semibold px-3 py-3 hover:-translate-y-2 hover:text-yellow-600"
                             >
                                 Demo Reel
                                 <hr className="w-8 h-1 mx-auto my-2 bg-yellow-500 border-0 rounded"></hr>

@@ -1,12 +1,9 @@
 'use client'
-import { createContext } from 'react'
 import React, { useState, useEffect } from 'react'
-import { Link as ScrollLink } from "react-scroll/modules"
-import { useTheme } from "next-themes"
-import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import { useTheme } from "next-themes"
 
 interface NavItem {
     label: string
@@ -21,10 +18,6 @@ interface NavItem {
 // replace icon in head.tsx with an actual icon
 
 const NAV_ITEMS: Array<NavItem> = [
-    // {
-    //     label: "Home",
-    //     page: "/",
-    // },
     {   label: "About",
         page: "/"
     },
@@ -40,15 +33,18 @@ const NAV_ITEMS: Array<NavItem> = [
     // {   label: "For Fun",
     //     page: "/forfun"
     // },
-    
 ]
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
-    const router = useRouter()
+    const { systemTheme, theme, setTheme } = useTheme()
+    const currentTheme = theme === "systemTheme" ? systemTheme : theme
+    //const router = useRouter()
+
+    // bg-white in top header
 
     return (
-        <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-white`}>
+        <header className={`w-full mx-auto px-10 fixed top-0 z-50 ${systemTheme === "dark" ? "bg-neutral-950" : "bg-white"}`}>
             <div className = "justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3">
@@ -86,18 +82,11 @@ const Navbar = () => {
                                         key={idx}
                                         href={item.page}
                                         className={
-                                            `block lg:inline-block font-semibold hover:text-yellow-600 text-neutral-900`
+                                            `block lg:inline-block font-semibold hover:text-yellow-600`
                                         }
-                                        
-                                       // activeClass="active"
-                                        //spy={true}
-                                        //offset={-100}
-                                        //duration={500}
                                         onClick={() => setNavbar(!navbar)}
                                         >{item.label}
                                     </Link>
-                                    
-                                    
                                 )
                             })}
                         </div>

@@ -230,7 +230,7 @@ const ProjectsSection = () => {
                                             </Link>
                                         </h1>
 
-                                        <p className="leading-7 mb-4 text-neutral-900"> 
+                                        <p className="leading-7 mb-4"> 
                                             {project.description}
                                         </p>
                                         <div className="flex flex-row align-bottom space-x-4">
@@ -292,7 +292,7 @@ const ProjectsSection = () => {
                                             <Link href={project.link} target="_blank">
                                                 {project.name}
                                             </Link></h1>
-                                        <p className="leading-7 mb-4 text-neutral-900"> 
+                                        <p className="leading-7 mb-4"> 
                                             {project.description}
                                         </p>
                                         <div className="flex flex-row align-bottom space-x-4">
@@ -358,14 +358,14 @@ const ProjectsSection = () => {
                                             </Link>
                                         </h1>
 
-                                        <p className="leading-7 mb-4 text-neutral-900"> 
+                                        <p className="leading-7 mb-4"> 
                                             {project.description}
                                         </p>
                                         <div className="flex flex-row align-bottom space-x-4">
                                             {project.tags.map((item, idx) => {
                                                 return (
                                                     <p key={idx}
-                                                        className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                                        className="bg-yellow-200 text-neutral-900 px-4 py-1 mt-2 rounded-lg font-semibold"
                                                         >
                                                         {item.skill}
                                                     </p>
