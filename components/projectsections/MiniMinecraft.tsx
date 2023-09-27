@@ -98,7 +98,7 @@ const MiniMinecraftSection = () => {
             <div className="flex item center items-stretch justify-center">
                 <Image 
                     className=""
-                    src="/Minecraft/MC multithreading Birds Eye2.gif"
+                    src="/Minecraft/MC Multithreading Birds Eye2.gif"
                     alt="" 
                     width={400} 
                     height={400}>
@@ -152,7 +152,7 @@ const MiniMinecraftSection = () => {
                     <div className="flex item-center justify-center">
                         <Image 
                             className=""
-                            src="/Minecraft/MC multithreading 2.gif"
+                            src="/Minecraft/MC Multithreading 2.gif"
                             alt="" 
                             width={400} 
                             height={400}>
