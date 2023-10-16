@@ -23,7 +23,7 @@ const HeroSection = () => {
                     </p>
                 </div>
                 <div className="mt-10 md:w-2/5">
-                    <Image className="rounded-full" src="/headshot.png" alt="" width={400} height={400}/>
+                    <Image className="rounded-full" src="/headshot_small.jpg" alt="" width={400} height={400}/>
                 </div>
             </div>
 
