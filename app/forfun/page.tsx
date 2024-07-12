@@ -1,7 +1,7 @@
 import ForFunSection from "@/components/ForFunSection"
 
 export const metadata = {
-  title: "For Fun | Claire Lu"
+  title: "Fun Stuff | Claire Lu"
 }
 
 export default function ForFunPage() {
@@ -11,3 +11,4 @@ export default function ForFunPage() {
         </main>
       )
 }
+

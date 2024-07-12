@@ -24,25 +24,21 @@ const NAV_ITEMS: Array<NavItem> = [
     {   label: "Projects",
         page: "/projects"
     },
-    {   label: "UI/UX",
-        page: "/design"
-    },
     {   label: "2D Art",
         page: "/portfolio"
+    },
+    {   label: "Fun Stuff",
+        page: "/forfun"
     },
     {   label: "Resume",
         page: "/resume"
     },
-    // {   label: "For Fun",
-    //     page: "/forfun"
-    // },
 ]
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
     const { systemTheme, theme, setTheme } = useTheme()
     const currentTheme = theme === "systemTheme" ? systemTheme : theme
-    //const router = useRouter()
 
     // bg-white in top header
 
