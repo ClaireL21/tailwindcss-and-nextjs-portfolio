@@ -4,22 +4,7 @@ import Link from "next/link"
 import { BsGithub, BsArrowUpRightSquare, BsArrowRightSquare } from "react-icons/bs"
 import SlideUp from './SlideUp'
 
-// Need a Demo Reel
-
-// Swe
-// Queenly stuff - ask Kathy if it's okay to post these things 
-    // follow project
-    // High res. 3d models (include link to medium blog)
-    // general survey component
-// FunFoodFinder
-// GameJam game
-
-// Graphics
-// Mini minecraft
-// mini maya
-// shader projects
-// fireball
-
+// Add Demo Reel??
 const combinedProjects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",

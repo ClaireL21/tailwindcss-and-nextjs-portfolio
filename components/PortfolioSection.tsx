@@ -47,7 +47,7 @@ const PortfolioSection = () => {
     return (
         <section id="portfolio">
              <h1 className="text-center font-bold text-3xl">
-                Portfolio
+                2D Art
             </h1>
             <TwoDArtSection/>
             <ComicsSection/>

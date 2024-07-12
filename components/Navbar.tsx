@@ -24,7 +24,10 @@ const NAV_ITEMS: Array<NavItem> = [
     {   label: "Projects",
         page: "/projects"
     },
-    {   label: "Portfolio",
+    {   label: "UI/UX",
+        page: "/design"
+    },
+    {   label: "2D Art",
         page: "/portfolio"
     },
     {   label: "Resume",

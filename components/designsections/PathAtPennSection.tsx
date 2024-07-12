@@ -1,23 +1,42 @@
 import Image from "next/image"
 
 const tags = [
-    { skill: "C++"},
-    { skill: "GLSL"},
-    { skill: "Qt"},
+    { skill: "Figma"},
 ]
 
-const MiniMinecraftSection = () => {
+const wireframes = [
+    { image: "/PathAtPenn/Path_wf_1.png"},
+    { image: "/PathAtPenn/Path_wf_2.png"},
+    { image: "/PathAtPenn/Path_wf_3.png"},
+    { image: "/PathAtPenn/Path_wf_4.png"},
+    { image: "/PathAtPenn/Path_wf_5.png"},
+    { image: "/PathAtPenn/Path_wf_6.png"},
+]
+
+const PathAtPennSection = () => {
     return (
-        <section id="miniMinecraft">
+        <section id="pathAtPennRedesign">
             <h1 className="text-center font-bold text-3xl">
-                Mini Minecraft: Pandora's Blocks
+                Path@Penn Redesign
             </h1>
 
-            <div className="mt-8">                
+            <div className="mt-8">
+                <div className="flex item-center justify-center">
+                    <Image 
+                        className=""
+                        src={"/PathAtPenn/Path_Cover Image.png"}
+                        alt="" 
+                        width={1000} 
+                        height={1000}>
+                    </Image>
+                </div>
+            </div>
+
+            {/* <div className="mt-8">                
                 <div className="h-[500px] w-auto aspect-w-16 aspect-h-9">
                     <iframe src="https://www.youtube.com/embed/XnAmGhJppd0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
-            </div>
+            </div> */}
 
             <div className="mt-8">
                 Mini Minecraft: Pandora's Blocks is a group final project for CIS 4600/5600: Introduction to Computer Graphics.
@@ -39,7 +58,7 @@ const MiniMinecraftSection = () => {
             </div>
 
             <h1 className="mt-8 text-left font-bold text-2xl">
-                Player Physics
+                Overview
             </h1>
           
             <div className="flex flex-col space-y-2 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
@@ -70,7 +89,7 @@ const MiniMinecraftSection = () => {
             </div>
 
             <h1 className="mt-6 text-left font-bold text-2xl">
-                Multithreading
+                Path@Penn Screens
             </h1>
 
             <div className="mt-2">
@@ -162,7 +181,7 @@ const MiniMinecraftSection = () => {
             </div>
 
             <h1 className="mt-6 text-left font-bold text-2xl">
-                Additional Biomes
+                Conducting Research
             </h1>
 
             <div>
@@ -258,7 +277,7 @@ const MiniMinecraftSection = () => {
                 smoothstep to calculate the weights of each biome when interpolating among biomes.
             </div>
 
-            <div className="mt-8 flex items-center justify-center"> 
+            <div className="mt-8 flex flex-col items-center justify-center"> 
                 <div className="grid grid-cols-3 grid-rows-1 gap-8">
                     <Image 
                         className=""
@@ -277,7 +296,7 @@ const MiniMinecraftSection = () => {
                     </Image>
 
                     <Image 
-                        className="rounded"
+                        className="flex flex-col rounded"
                         src="/Minecraft/Biome Blending 6.png"
                         alt="" 
                         width={300} 
@@ -286,7 +305,7 @@ const MiniMinecraftSection = () => {
                 </div>
             </div>
 
-            <div className="mt-8 flex item center items-stretch justify-center">
+            <div className="mt-8 flex flex-col item center items-stretch justify-center">
                 <Image 
                     className=""
                     src="/Minecraft/MC biome blending.gif"
@@ -296,9 +315,59 @@ const MiniMinecraftSection = () => {
                 </Image>
             </div>
 
+            <h1 className="mt-6 text-left font-bold text-2xl">
+                Research Synthesis & Insights
+            </h1>
+
+            <div>
+                blah blah blah
+            </div>
+
+            <h1 className="mt-6 text-left font-bold text-2xl">
+                Sketches & Wireframes
+            </h1>
+
+            <div>
+                hello
+            </div>
+
+            <div className="flex items-center justify-center"> 
+                <div className="md:grid md:grid-cols-3 md:grid-rows-2 md:gap-8">
+                    {wireframes.map((item, idx) => {
+                        return (
+                        <div key={idx}>
+                            <div className="flex flex-col md:flex-col md:space-x-2">
+                                <div className="mt-8">
+                                    <Image 
+                                        className="rounded-sm"
+                                        src={item.image}
+                                        alt="" 
+                                        width={500} 
+                                        height={500}>
+                                    </Image>
+                                </div>
+                            </div>
+                        </div>
+                        ) 
+                    })}
+                </div>
+            </div>
+
+            <div>
+                blah blah blah
+            </div>
+
+            <h1 className="mt-6 text-left font-bold text-2xl">
+                Final UI Solution
+            </h1>
+
+            <div>
+                blah blah blah
+            </div>
+
             
         </section>
     )
 }
 
-export default MiniMinecraftSection
+export default PathAtPennSection

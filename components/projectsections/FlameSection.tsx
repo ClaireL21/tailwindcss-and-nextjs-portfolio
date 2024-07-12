@@ -132,11 +132,6 @@ const FlameSection = () => {
                     })}
                 </div>
             </div>
-
-
-
-
-
         </section>
     )
 }

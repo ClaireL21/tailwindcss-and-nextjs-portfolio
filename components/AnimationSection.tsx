@@ -5,7 +5,7 @@ import { Link } from "react-scroll/modules"
 
 const AnimationSection = () => {
     return (
-        <section id="comics">
+        <section id="animation">
 
             <h1 className="mt-6 text-left font-bold text-2xl">
                 Animation
