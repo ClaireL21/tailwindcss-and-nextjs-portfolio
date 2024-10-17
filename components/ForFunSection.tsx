@@ -47,7 +47,7 @@ const ForFunSection = () => {
         <section id="design">
 
             <h1 className="mt-6 text-center font-bold text-3xl">
-                ForFun
+                For Fun !
             </h1>
 
             <h1 className="text-left font-bold text-2xl">
